@@ -1,4 +1,4 @@
-import 'package:coffee_timer/models/recipe.dart';
+import 'package:escoffee_timer/models/recipe.dart';
 
 class RecipeSummary {
   final String id;
@@ -15,7 +15,8 @@ class RecipeSummary {
     String summary = "";
     int cumulativeTime = 0; // total seconds
 
-    String replacePlaceholders(String description, double coffeeAmount, double waterAmount) {
+    String replacePlaceholders(
+        String description, double coffeeAmount, double waterAmount) {
       RegExp exp = RegExp(
           r'\(([\d.]+) x <(coffee_amount|water_amount|final_coffee_amount|final_water_amount)>\)');
       String replacedText = description.replaceAllMapped(exp, (match) {

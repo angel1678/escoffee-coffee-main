@@ -9,13 +9,13 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i8;
-import 'package:coffee_timer/screens/about_screen.dart' as _i1;
-import 'package:coffee_timer/screens/coffee_tips_screen.dart' as _i2;
-import 'package:coffee_timer/screens/donation_screen.dart' as _i3;
-import 'package:coffee_timer/screens/home_screen.dart' as _i4;
-import 'package:coffee_timer/screens/onboarding_screen.dart' as _i5;
-import 'package:coffee_timer/screens/recipe_detail_screen.dart' as _i6;
-import 'package:coffee_timer/screens/recipe_list_screen.dart' as _i7;
+import 'package:escoffee_timer/screens/about_screen.dart' as _i1;
+import 'package:escoffee_timer/screens/coffee_tips_screen.dart' as _i2;
+import 'package:escoffee_timer/screens/donation_screen.dart' as _i3;
+import 'package:escoffee_timer/screens/home_screen.dart' as _i4;
+import 'package:escoffee_timer/screens/onboarding_screen.dart' as _i5;
+import 'package:escoffee_timer/screens/recipe_detail_screen.dart' as _i6;
+import 'package:escoffee_timer/screens/recipe_list_screen.dart' as _i7;
 import 'package:flutter/material.dart' as _i9;
 
 abstract class $AppRouter extends _i8.RootStackRouter {

@@ -68,15 +68,17 @@ class _BrewingProcessScreenState extends State<BrewingProcessScreen> {
   void initState() {
     super.initState();
     WakelockPlus.enable();
+
     brewingSteps = widget.recipe.steps
+        .where((step) => step != null) // Filtra los pasos nulos
         .map((step) => BrewStep(
-              order: step.order,
+              order: (step as BrewStep?)?.order ?? 0,
               description: replacePlaceholders(
-                step.description,
+                (step as BrewStep?)?.description ?? '',
                 widget.coffeeAmount,
                 widget.waterAmount,
               ),
-              time: step.time,
+              time: (step as BrewStep?)?.time ?? Duration.zero,
             ))
         .where((step) => step.time.inSeconds > 0)
         .toList();

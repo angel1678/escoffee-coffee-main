@@ -1,4 +1,4 @@
-import 'package:coffee_timer/models/brew_step.dart';
+import 'package:escoffee_timer/models/brew_step.dart';
 
 class Recipe {
   final String id;
