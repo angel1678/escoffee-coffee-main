@@ -1,5 +1,5 @@
-name: coffee_timer
-description: Brew delicious coffee at home with Timer.Coffee
+name: escoffee_timer
+description: Brew delicious coffee at home with Escoffee.Coffee
 publish_to: 'none'
 version: 1.0.0+29
 
