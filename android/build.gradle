@@ -29,3 +29,15 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
+// Agregar la siguiente configuración para Java 17
+// Puedes cambiar "/ruta/a/java17" a la ruta real en tu sistema
+gradle.projectsLoaded {
+    rootProject.allprojects {
+        gradle.projectsEvaluated {
+            tasks.withType(JavaCompile) {
+                options.compilerArgs.add("--release", "17")
+                options.compilerArgs.add("17")
+            }
+        }
+    }
+}
