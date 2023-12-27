@@ -1,9 +1,18 @@
 workflows:
   main:
-    name: Build and Test
+    name: Main Workflow
+    environment:
+      flutter: stable
+      java: openjdk-17
+
     scripts:
-      - echo "Switching to Java 17"
-      - echo "JAVA_HOME=C:/Program Files/Java/jdk-17.0.2" >> $HOME/.bashrc
-      - echo "Java 17 installed"
-      - flutter pub get
-      - flutter build appbundle --debug
+      - name: Install dependencies
+        script: flutter pub get
+
+      - name: Build APK
+        script: flutter build apk --release
+
+      # Puedes agregar pasos adicionales según sea necesario, como pruebas, análisis estático, etc.
+
+artifacts:
+  - build/app/outputs/flutter-apk/app-release.apk
