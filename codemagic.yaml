@@ -4,7 +4,7 @@ workflows:
     environment:
       flutter: stable
       java: openjdk-17
-
+      installation: C:/Program Files/Java/jdk-17.0.2
     scripts:
       - name: Install dependencies
         script: flutter pub get
