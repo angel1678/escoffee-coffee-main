@@ -1,6 +1,10 @@
 workflows:
   main:
-    - name: Configure Java
-      script:
-        - echo "org.gradle.java.home=C:/Program Files/Java/jdk-17.0.2" >> android/gradle.properties
-        - flutter build appbundle --debug
+    name: Build and Test
+    scripts:
+      - echo "Switching to Java 17"
+      - echo "export JAVA_HOME=/usr/lib/jvm/zulu-17-amd64" >> $HOME/.bashrc
+      - export JAVA_HOME=/usr/lib/jvm/zulu-17-amd64
+      - echo "Java 17 installed"
+      - flutter pub get
+      - flutter build appbundle --debug
