@@ -1,10 +1,9 @@
 workflows:
   main:
     environment:
-      java:
-        version: openjdk-17
+      java: openjdk-17
     scripts:
       - name: Install dependencies
         script: flutter pub get
       - name: Build app bundle
-        script: flutter build appbundle --debug
+        script: flutter build appbundle --debu
