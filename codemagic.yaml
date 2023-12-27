@@ -3,9 +3,7 @@ workflows:
     environment:
       java: openjdk@17
     scripts:
-      - name: Install dependencies
-        script: flutter pub get
       - name: Set JAVA_HOME and build
         script: |
-          export JAVA_HOME=$JAVA_HOME
+          export JAVA_HOME=/Program Files/Java/jdk-17.0.2
           flutter build appbundle --debug
