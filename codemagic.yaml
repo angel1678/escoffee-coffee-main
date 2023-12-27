@@ -5,7 +5,7 @@ workflows:
     scripts:
       - name: Install dependencies
         script: flutter pub get
-      - name: Set JAVA_HOME
-        script: echo 'export JAVA_HOME=${C:/Program Files/Java/jdk-17.0.2}' >> $HOME/.bashrc && source $HOME/.bashrc
-      - name: Build app bundle
-        script: flutter build appbundle --debug
+      - name: Set JAVA_HOME and build
+        script: |
+          export JAVA_HOME=$JAVA_HOME
+          flutter build appbundle --debug
