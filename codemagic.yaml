@@ -6,4 +6,4 @@ workflows:
       - name: Set JAVA_HOME and build
         script: |
           export JAVA_HOME=/Program Files/Java/jdk-17.0.2
-          flutter build appbundle --debugeeeeee
+          flutter build appbundle --debug
