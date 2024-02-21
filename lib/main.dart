@@ -137,7 +137,7 @@ class _QuickActionsManagerState extends State<QuickActionsManager> {
         return AlertDialog(
           title: const Text("¡Gracias!"),
           content: const Text(
-              "¡Realmente aprecio su apoyo! ¡Te deseo muchas buenas cervezas! ☕️"),
+              "¡11Realmente aprecio su apoyo! ¡Te deseo muchas buenas cervezas! ☕️"),
           actions: [
             TextButton(
               child: const Text("OK"),
